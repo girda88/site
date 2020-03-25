@@ -7,23 +7,12 @@
 </head>
 <body>
     <script>
-        let admin = prompt("Введите логин")
-        if ( admin == "Админ"){
-
-            let password = prompt("Введите пароль")
-            if(password == "Я главный"){
-                alert("Здравствуйте")
-            }else if(password == "" || password == null) {
-                alert("Отменено")
-            } else {
-            alert("Неверный пароль")
-        }
-            
-        }else if (admin == "" || admin || null){
-            alert("Отменено");
-        } else {
-            alert("Я вас не знаю");
-        }
+     let obj = {
+         a: 1,
+         b: 2,
+         c: 3,
+     }
+    console.log(obj.c)
     </script>
 </body>
 </html>
