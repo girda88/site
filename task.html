@@ -6,19 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+   
           <script>
    findNextSquare = (sq) => {
 
-     let num = Math.sqrt(sq)+1;
-     num = Math.pow(num, 2)
     
-    return num;
+     let num = Math.sqrt(sq);
+     if(num % 1 === 0){
+      return num = Math.pow(num+1, 2)
      
-
+     }else {
+       return num = -1
+     }
+    
 }
-console.log(findNextSquare(9));
+console.log(findNextSquare(8));
   </script>
-    </script>
+    
 </body>
 </html>
